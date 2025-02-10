@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es-ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Mi BTA</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/imagenes/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Registro de Uso - Máquina de Cortar Césped</h1>
+        <img src="imagenes/maquina.png" alt="Máquina de cortar césped">
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha">
+
+        <label for="horas-uso">Horas usadas hoy:</label>
+        <input type="number" id="horas-uso" placeholder="Ej: 2">
+
+        <label for="notas">Notas:</label>
+        <input type="text" id="notas" placeholder="Detalles opcionales">
+
+        <button id="agregar-btn">Registrar uso</button>
+
+        <h2>Historial de Uso</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Horas usadas</th>
+                    <th>Horas totales</th>
+                    <th>Horas desde último cambio de aceite</th>
+                    <th>Notas</th>
+                </tr>
+            </thead>
+            <tbody id="historial">
+                <!-- Aquí se insertarán las filas dinámicamente -->
+            </tbody>
+        </table>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
